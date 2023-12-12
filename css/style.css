@@ -16,11 +16,13 @@ h1 {
 	font-size: 54px;
 }
 
-.pokedex {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	grid-gap: 20px;
-	padding-inline-start: 0;
+.poke {
+	margin-top: 10px;
+	text-align: center;
+	-webkit-filter: drop-shadow(5px 0px 0px white);
+	filter: drop-shadow(5px 0px 0px black);
+	
+	
 }
 
 .card {
