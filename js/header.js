@@ -1,0 +1,1 @@
+import Pokedex from "../src/img/pokedex.png";
