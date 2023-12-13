@@ -25,6 +25,23 @@ h1 {
 	
 }
 
+.dropdown {
+	margin-top: 10px;
+	text-align: center;
+   
+	
+}
+
+.navbar .container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: right;
+}
+
+	
+	
+
 .card {
 	list-style: none;
 	padding: 40px;
