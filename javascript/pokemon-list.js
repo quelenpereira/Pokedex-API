@@ -24,14 +24,14 @@ const typeColors = {
     'shadow': '#0E2E4C'
 };
 
-/**update pokemon list to */
+
 function updatePokemonList() {
     if (currentlyShowingAmount <= maxIndex) {
         renderPokemonListItem(currentlyShowingAmount);
     };
 };
 
-/**render */
+
 function renderPokemonListItem(index) {
     if (currentList[index]) {
         document.getElementById('pokedex-list-render-container').insertAdjacentHTML('beforeend', `<div onclick="openInfo(${currentList[index].id})" class="pokemon-render-result-container container center column">
@@ -55,7 +55,7 @@ function increaseMaxIndex(by) {
     };
 };
 
-/**get type containers for pokemon infos */
+
 function getTypeContainers(typesArray) {
     let htmlToReturn = '<div class="row">';
 
@@ -68,7 +68,7 @@ function getTypeContainers(typesArray) {
     return htmlToReturn + '</div>';
 };
 
-/**on search input keydown*/
+
 function search() {
     setTimeout(function () {
         let searchResults = [];
@@ -93,13 +93,13 @@ function search() {
 };
 
 
-/** Scroll */
+
 window.addEventListener('scroll', function () {
     addNewScrollPokemon();
     updateBackToTopVisibility();
 });
 
-/**add new scroll pokemon when bottom is reached */
+
 function addNewScrollPokemon() {
     if (window.scrollY + 100 >= document.documentElement.scrollHeight - document.documentElement.clientHeight) {
         increaseMaxIndex(30);
@@ -107,7 +107,7 @@ function addNewScrollPokemon() {
     };
 };
 
-/**make back to top button visible */
+
 function updateBackToTopVisibility() {
     if(window.scrollY > window.innerHeight) {
         document.getElementById('back-to-top-button').classList.remove('hide');
@@ -121,7 +121,7 @@ function backToTop() {
 };
 
 
-/**dress up payload value */
+
 function dressUpPayloadValue(string) {
     let splitStr = string.toLowerCase().split('-');
     for (let i = 0; i < splitStr.length; i++) {
