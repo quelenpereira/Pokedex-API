@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
+
 <body onload="getAllNames()" class="row">
     <!--Setup Loading Div-->
     <div id="loading-div">
@@ -20,18 +21,19 @@
     <!--Search Bar and render search pokemon-->
     <div id="pokedex-list" class="column">
 
-        <!--Search Bar-->
-        <div id="search-bar-container" class="row container margin-40">
+    
+        <div class="poke">
+    
+            <img src="./src/pokedex.png" alt="">
+
+        </div>
+    
+          <!--Procurar Pokemon-->
+          <div id="search-bar-container" class="row container margin-40">
             <input id="search-input" onkeydown="search()" placeholder="Search your Pokemon">
             <div id="start-search-button" class="center">
                 <i class="fas fa-search"></i>
             </div>
-        </div>
-
-        <div class="poke">
-    
-            <img src="./src/pokedex.png" alt="">
-    
         </div>
 
         <div id="pokedex-list-render-container">
