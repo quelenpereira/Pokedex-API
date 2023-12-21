@@ -163,7 +163,7 @@ input {
 }
 
 .pokemon-render-result-container:hover {
-    border: 2px solid #8d171d;
+    border: 2px solid #3361b6;
 }
 
 .pokemon-render-result-container:hover .search-pokemon-image {
@@ -450,4 +450,14 @@ input {
     #search-bar-container {
         margin: 40px 0;
     }
+}
+
+    .poke {
+	margin-top: 5px;
+	text-align: center;
+	-webkit-filter: drop-shadow(5px 0px 0px white);
+	filter: drop-shadow(5px 0px 0px black);
+    padding-right: 2px;
+    padding-left: 2px;
+
 }
